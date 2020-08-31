@@ -1,30 +1,61 @@
 * {
-  margin:0;
-  padding: 0;
-  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.App-logo {
+	height: 40vmin;
+	pointer-events: none;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  animation-duration: 20s;
+}
+
+.App-header {
+	background-color: #282c34;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: top;
+	font-size: calc(10px + 2vmin);
+	color: white;
+}
+
+@keyframes App-logo-spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
 }
 
 .counter {
-  text-align: center;
-  border: 1px solid black;
-  padding: 10px;
-  background-color: thistle;
+	text-align: center;
+	border: 2px solid wheat;
+	padding: 10px;
+	background-color: #61DAFB;
 }
 
 .counterBtn {
-  width: 100px;
-  height: 25px;
-  cursor: pointer;
+	width: 100px;
+	height: 25px;
+	cursor: pointer;
   outline: none;
-  background-color: aquamarine;
-  color: black;
+	background-color: wheat;
+	color: black;
 }
 
 .counterBtn:disabled {
-  border: 2px solid red;
+	border: 2px solid red;
   opacity: 0.6;
+  cursor: not-allowed;
 }
 
 .counterBtn:enabled {
-  border: 2px solid green;
+	border: 2px solid green;
 }
